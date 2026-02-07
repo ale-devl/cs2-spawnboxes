@@ -1,0 +1,15 @@
+{
+  "Enabled": true,
+  "BoxSize": 30.0,
+  "InteractionDistance": 50.0,
+  "ShowChatMessages": true,
+  "TickRate": 16,
+  "BeamWidth": 0.5,
+  "TerroristColorR": 255,
+  "TerroristColorG": 255,
+  "TerroristColorB": 0,
+  "CounterTerroristColorR": 0,
+  "CounterTerroristColorG": 150,
+  "CounterTerroristColorB": 255,
+  "ConfigVersion": 1
+}
