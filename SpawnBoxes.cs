@@ -32,7 +32,7 @@ public class PluginConfig : BasePluginConfig
 public class SpawnBoxesPlugin : BasePlugin, IPluginConfig<PluginConfig>
 {
     public override string ModuleName => "Spawn Boxes";
-    public override string ModuleVersion => "1.0.0";
+    public override string ModuleVersion => "1.0.1";
     public override string ModuleAuthor => "ale-devl";
     public override string ModuleDescription => "Creates visible, interactible boxes at spawn points for teleportation";
 
