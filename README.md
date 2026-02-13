@@ -78,6 +78,7 @@ Create `configs/plugins/SpawnBoxes/SpawnBoxes.json` or run the plugin once to au
   "DebugLog": false,
   "TickRate": 16,
   "BeamWidth": 2.0,
+  "BoxHeightOffset": 10.0,
   "TerroristColorR": 255,
   "TerroristColorG": 255,
   "TerroristColorB": 0,
@@ -98,6 +99,7 @@ Create `configs/plugins/SpawnBoxes/SpawnBoxes.json` or run the plugin once to au
 | `DebugLog` | bool | `false` | Enable verbose console logging for debugging |
 | `TickRate` | int | `16` | How often to check player proximity (lower = more frequent, higher = less CPU) |
 | `BeamWidth` | float | `2.0` | Width of the beam lines in pixels |
+| `BoxHeightOffset` | float | `10.0` | Height offset for spawn boxes above ground in units |
 | `TerroristColorR` | int | `255` | Red component for T spawn boxes (0-255) |
 | `TerroristColorG` | int | `255` | Green component for T spawn boxes (0-255) |
 | `TerroristColorB` | int | `0` | Blue component for T spawn boxes (0-255) |

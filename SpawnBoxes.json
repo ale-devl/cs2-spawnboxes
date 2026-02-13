@@ -5,6 +5,7 @@
   "ShowChatMessages": true,
   "TickRate": 16,
   "BeamWidth": 0.5,
+  "BoxHeightOffset": 10.0,
   "TerroristColorR": 255,
   "TerroristColorG": 255,
   "TerroristColorB": 0,

@@ -19,6 +19,7 @@ public class PluginConfig : BasePluginConfig
     public bool DebugLog { get; set; } = false;
     public int TickRate { get; set; } = 16;
     public float BeamWidth { get; set; } = 0.5f;
+    public float BoxHeightOffset { get; set; } = 10f;
     public int TerroristColorR { get; set; } = 255;
     public int TerroristColorG { get; set; } = 255;
     public int TerroristColorB { get; set; } = 0;
@@ -658,10 +659,11 @@ public class SpawnBoxesPlugin : BasePlugin, IPluginConfig<PluginConfig>
 
         // Define 4 corners of the ground square
         Vector[] corners = new Vector[4];
-        corners[0] = new Vector(pos.X - halfWidth, pos.Y - halfWidth, pos.Z + 2);
-        corners[1] = new Vector(pos.X + halfWidth, pos.Y - halfWidth, pos.Z + 2);
-        corners[2] = new Vector(pos.X + halfWidth, pos.Y + halfWidth, pos.Z + 2);
-        corners[3] = new Vector(pos.X - halfWidth, pos.Y + halfWidth, pos.Z + 2);
+        float zOffset = Config.BoxHeightOffset;
+        corners[0] = new Vector(pos.X - halfWidth, pos.Y - halfWidth, pos.Z + zOffset);
+        corners[1] = new Vector(pos.X + halfWidth, pos.Y - halfWidth, pos.Z + zOffset);
+        corners[2] = new Vector(pos.X + halfWidth, pos.Y + halfWidth, pos.Z + zOffset);
+        corners[3] = new Vector(pos.X - halfWidth, pos.Y + halfWidth, pos.Z + zOffset);
 
         // Create beams for the 4 edges
         spawn.BeamEntities.Add(CreateBeam(corners[0], corners[1], color));
